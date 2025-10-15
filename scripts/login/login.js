@@ -146,7 +146,7 @@ async function userLogin() {
  * @param {Object} userData - User data to save.
  */
 async function createUserFolder(userData) {
-  const url = "https://joinstorage-805e6-default-rtdb.europe-west1.firebasedatabase.app/currentUser.json";
+  const url = "https://join-4eea4-default-rtdb.firebaseio.com//currentUser.json";
   const data = { email: userData.email, name: userData.name };
 
   try {
@@ -167,7 +167,7 @@ async function createUserFolder(userData) {
  * @returns {Promise<Object|null>} - Found user or null.
  */
 async function checkIfContactExists(email) {
-  const url = "https://joinstorage-805e6-default-rtdb.europe-west1.firebasedatabase.app/logindata.json";
+  const url = "https://join-4eea4-default-rtdb.firebaseio.com//logindata.json";
   try {
     const res = await fetch(url);
     const data = await res.json();

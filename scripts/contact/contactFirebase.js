@@ -2,7 +2,7 @@
  * Base URL for Firebase Realtime Database.
  * @constant {string}
  */
-const Base_URL = "https://joinstorage-805e6-default-rtdb.europe-west1.firebasedatabase.app/";
+const Base_URL = "https://join-4eea4-default-rtdb.firebaseio.com/";
 
 
 /**

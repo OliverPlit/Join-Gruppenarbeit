@@ -117,7 +117,7 @@ function resetFormFields() {
  * @returns {Promise<boolean>}
  */
 async function checkIfContactExists(email) {
-  const Base_URL = "https://joinstorage-805e6-default-rtdb.europe-west1.firebasedatabase.app/";
+  const Base_URL = "https://join-4eea4-default-rtdb.firebaseio.com/";
   const url = `${Base_URL}/logindata.json`;
 
   try {
@@ -140,7 +140,7 @@ async function checkIfContactExists(email) {
  * @param {string} password
  */
 async function saveContact(email, name, password) {
-  const Base_URL = "https://joinstorage-805e6-default-rtdb.europe-west1.firebasedatabase.app/";
+  const Base_URL = "https://join-4eea4-default-rtdb.firebaseio.com/";
   const personData = { email, name, password };
   const url = `${Base_URL}/logindata.json`;
 

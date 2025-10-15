@@ -1,4 +1,4 @@
-const Base_URL = "https://joinstorage-805e6-default-rtdb.europe-west1.firebasedatabase.app/";
+const Base_URL = "https://join-4eea4-default-rtdb.firebaseio.com/";
 
 let currentTasks = {}; /** This is the object, where all tasks are saved*/
 let currentTask = {}; /** This is the object, which is used to post new data on the database*/
